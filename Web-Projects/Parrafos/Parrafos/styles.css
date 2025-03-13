@@ -1,0 +1,128 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1,6;
+    margin: 0;
+    padding: 0;
+    background-color: #a13939;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Párrafos */
+section p {
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parrafo-1 {
+    background-color: #87CEEB;
+}
+
+.parrafo-2 {
+    background-color: #98FB98;
+}
+
+.parrafo-3 {
+    background-color: #FFD700;
+}
+
+/* Lista personalizada */
+.lista-personalizada {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 4px solid #000000;
+    border-bottom: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.lista-personalizada li {
+    background-color: #f9f9f9;
+    padding: 15px 20px;
+    border-bottom: 3px solid #000000;
+    position: relative;
+    font-size: 18px;
+    color: #333;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.lista-personalizada li::before {
+    content: "•"; /* Marcador personalizado */
+    color: #4CAF50;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: 8px;
+    top: 25%;
+}
+
+.lista-personalizada li:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+}
+
+.lista-personalizada li:active {
+    background-color: #b2dfdb;
+    transform: scale(0.95);
+}
+
+/* Botón mejorado */
+.boton-saltarin {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #4CAF50, #388E3C);
+    border: 2px solid #2E7D32;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Hover (al pasar el ratón) */
+.boton-saltarin:hover {
+    background: linear-gradient(135deg, #66BB6A, #43A047);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Active (al hacer clic) */
+.boton-saltarin:active {
+    background: #388E3C;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+/* Caja centrada */
+.caja {
+    border: 2px solid #000;
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

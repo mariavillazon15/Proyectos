@@ -1,0 +1,255 @@
+:root {
+    --blanco-perla: #FAF3F0;
+    --rosa-palo: #F4A7B9;
+    --rosa-suave: #FFC1CC;
+    --negro-suave: #2F2F2F;
+    --gris-cálido: #B5A59B;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--blanco-perla);
+    color: var(--negro-suave);
+    margin: 0;
+    justify-content: space-between;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilos para el acordeón */
+.acordeon-btn {
+    background-color: #F4A7B9;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.acordeon-btn:hover {
+    background-color: #FFC1CC;
+}
+
+.panel {
+    display: none;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #F4A7B9;
+    text-align: left;
+}
+
+/* Imagen del servicio */
+.servicio-imagen {
+    text-align: center;
+    padding: 20px;
+}
+
+.servicio-imagen img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Tabla de precios */
+.tabla-precios {
+    text-align: center;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #F4A7B9;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #FFC1CC;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #FAF3F0;
+}
+
+
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--rosa-palo);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.boton:hover {
+    background-color: var(--rosa-suave);
+}
+.acordeon {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.acordeon input {
+    display: none;
+}
+
+.acordeon label {
+    display: block;
+    background-color: #FFC1CC;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: center;
+}
+
+.acordeon label:hover {
+    background-color: #F4A7B9;
+}
+
+.contenido {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #FAF3F0;
+    padding: 0 0px;
+    border-radius: 5px;
+    transition: max-height 0.3s ease-out;
+}
+
+.acordeon input:checked + label + .contenido {
+    max-height: 100px; /* Ajusta este valor según el contenido */
+    padding: 10px;
+}
+
+
+
+
+/* Estilos específicos para la página de contacto */
+.pagina-contacto main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.donde-estamos{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+}
+
+header {
+    flex-direction: column;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    background-color: var(--rosa-palo);
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+    text-align: center;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+
+}
+
+nav{
+    display: block;
+    background-color: #FFC1CC;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--rosa-suave);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+    background-color: var(--rosa-suave);
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre elementos del menú */
+}
+
+nav ul li a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--rosa-palo);
+    font-weight: bold;
+}
+
+/* Línea de subrayado animada en hover */
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--rosa-palo);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+ footer {
+    background: var(--gris-cálido);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 3px solid var(--rosa-palo);
+}

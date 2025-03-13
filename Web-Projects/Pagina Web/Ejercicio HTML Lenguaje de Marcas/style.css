@@ -1,0 +1,152 @@
+:root {
+    --blanco-perla: #FAF3F0;
+    --rosa-palo: #F4A7B9;
+    --rosa-suave: #FFC1CC;
+    --negro-suave: #2F2F2F;
+    --gris-cálido: #B5A59B;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: var(--blanco-perla);
+    color: var(--negro-suave);
+    margin: 0;
+    justify-content: space-between;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+img{
+    height: auto;
+    display: auto;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    position: relative;
+    max-width: 100%;
+    border-radius: 10%;
+}
+.bienvenida img {
+    margin-top: 20px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background-color: var(--rosa-palo);
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header img {
+    height: 70px; /* Reduce un poco el tamaño del logo */
+    margin-right: 30px; /* Mayor separación del texto */
+    border-radius: 10%;
+}
+
+/* TEXTO DEL HEADER */
+header h1 {
+    margin: 0;
+    text-align: left;
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--rosa-palo);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.boton:hover {
+    background-color: var(--rosa-suave);
+}
+
+nav{
+    display: block;
+    background-color: #FFC1CC;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--rosa-suave);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content:space-around;
+    background-color: var(--rosa-suave);
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre elementos del menú */
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: var(--rosa-palo);
+    font-weight: bold;
+}
+
+/* Línea de subrayado animada en hover */
+nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--rosa-palo);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+ footer {
+    background: var(--gris-cálido);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 3px solid var(--rosa-palo);
+}

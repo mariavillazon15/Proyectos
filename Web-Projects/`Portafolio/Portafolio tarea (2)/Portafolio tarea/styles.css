@@ -1,0 +1,135 @@
+/* styles.css - Paleta pastel rosa */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3F0; /* Fondo rosa claro/beige */
+    color: #4D3C3C; /* Texto principal marrón suave */
+}
+
+nav {
+    background-color: #F9C5D5; /* Fondo del menú en rosa pastel */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #4D3C3C; /* Marrón suave para los enlaces */
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+.active {
+    background-color: #E1A4B7; /* Rosa medio más oscuro para resaltar */
+    border-radius: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Página de Inicio */
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #F3D1C9; /* Borde durazno pastel */
+}
+
+/* Portafolio */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.grid div {
+    width: 30%;
+    text-align: center;
+}
+
+
+
+.grid p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #4D3C3C;
+}
+
+
+.grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 10px rgba(241, 184, 210, 0.5); /* Sombras rosa suave */
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Contacto */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(225, 164, 183, 0.3);
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #D4B5B0; /* Borde rosa pálido */
+    border-radius: 5px;
+    background-color: #FAF3F0; /* Para  Fondo suave */
+}
+
+button {
+    padding: 10px;
+    background-color: #E1A4B7; /* Botón para color rosa pastel */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #D4B5B0; /* Botón para hacer más claro el cursor al pasarlo */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F3D1C9; /* Color pastel */
+    color: #4D3C3C;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* Lo hace Responsivo */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        text-align: center;
+    }
+}

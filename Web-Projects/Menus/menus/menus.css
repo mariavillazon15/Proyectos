@@ -1,0 +1,142 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Menú Horizontal Básico */
+.menu-horizontal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: #4CAF50;
+}
+
+.menu-horizontal li {
+    margin: 0;
+}
+
+.menu-horizontal a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu-horizontal a:hover {
+    background: #45a049;
+}
+
+/* Menú Vertical con Submenús */
+.menu-vertical ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-vertical > ul > li {
+   position: relative;
+}
+
+.menu-vertical a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.menu-vertical a:hover {
+    background: #e4e4e4;
+}
+
+.menu-vertical .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50px;
+    background: white;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    width: 200px;
+}
+
+.menu-vertical li:hover .submenu {
+   display: block;
+}
+
+
+/* Menú con Íconos */
+.menu-iconos ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-iconos a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu-iconos a:hover {
+    color: #4CAF50;
+}
+
+/* Menú Horizontal Desplegable */
+.menu-horizontal-desplegable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background: #333;
+}
+
+.menu-horizontal-desplegable li {
+    width: 120px;
+    height: 40px;
+}
+
+.menu-horizontal-desplegable a {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.menu-horizontal-desplegable a:hover {
+    background: #444;
+}
+
+.menu-horizontal-desplegable .submenu {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.menu-horizontal-desplegable li:hover .submenu {
+    display: block;
+ }
+
+.menu-horizontal-desplegable .submenu a {
+    padding: 10px 20px;
+    color: white;
+}
+
+.menu-horizontal-desplegable .submenu a:hover {
+    background: #555;
+}
